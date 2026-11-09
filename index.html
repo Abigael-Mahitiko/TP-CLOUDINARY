@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Découvrez la galerie personnelle d'Abigael Mahitiko : portraits, couleurs et instants choisis.">
+    <title>Abigael Mahitiko — Galerie</title>
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Abigael Mahitiko, accueil">
+        <span class="brand-mark">AM</span>
+        <span class="brand-name">Abigael Mahitiko</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+        <a class="nav-link is-current" href="#galerie">La galerie</a>
+        <a class="nav-link" href="#apropos">À propos</a>
+        <a class="nav-cta" href="#galerie">Découvrir les portraits <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Galerie personnelle <span class="eyebrow-dot"></span> 2026</p>
+          <h1 id="hero-title">ABIGAEL<br><span>MAHITIKO</span></h1>
+          <p class="hero-description">Des couleurs, des regards, des instants. Une galerie personnelle qui célèbre la beauté d’être soi.</p>
+          <a class="text-link" href="#galerie">Explorer la collection <span aria-hidden="true">↓</span></a>
+          <div class="hero-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <span>Une collection de <strong>quatre portraits</strong>, réunis ici avec soin.</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-frame">
+            <button class="hero-photo-open" type="button" aria-label="Agrandir : Couleurs en lumière">
+              <img
+                src="https://res.cloudinary.com/vh2wg70z/image/upload/f_auto,q_auto,w_1100,c_limit/profile3.jpg"
+                alt="Abigael en tenue colorée, devant une façade jaune"
+                fetchpriority="high"
+              >
+              <span class="hero-image-caption">
+                <span>01 — Une présence lumineuse</span>
+                <span class="caption-arrow" aria-hidden="true">↗</span>
+              </span>
+            </button>
+          </div>
+          <span class="hero-stamp" aria-hidden="true"><span>Portraits</span><span class="stamp-star">✳</span><span>Souvenirs</span></span>
+          <span class="hero-index" aria-hidden="true">AM / 01</span>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="galerie" aria-labelledby="gallery-title">
+        <div class="section-topline"><span>La collection</span><span>Quatre images, mille nuances</span></div>
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow">Regards choisis</p>
+            <h2 id="gallery-title">Un peu de moi,<br><em>à travers l’image.</em></h2>
+          </div>
+          <p class="gallery-intro">Chaque portrait garde une trace : une allure, une humeur, un instant qui mérite de durer.</p>
+        </div>
+
+        <div class="gallery-toolbar">
+          <div class="filter-list" role="group" aria-label="Filtrer les photos">
+            <button class="filter-button is-active" type="button" data-filter="tout" aria-pressed="true">Tout <span>04</span></button>
+            <button class="filter-button" type="button" data-filter="portrait" aria-pressed="false">Portraits</button>
+            <button class="filter-button" type="button" data-filter="style" aria-pressed="false">Style</button>
+            <button class="filter-button" type="button" data-filter="instant" aria-pressed="false">Instants</button>
+          </div>
+          <p class="photo-count" aria-live="polite"><span id="visible-count">04</span> photographies</p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="photo-card photo-card--feature" data-category="style portrait" data-original-url="https://res.cloudinary.com/vh2wg70z/image/upload/profile3.jpg" data-download-url="https://res.cloudinary.com/vh2wg70z/image/upload/fl_attachment/profile3.jpg" data-description="Un portrait en pied dans une tenue aux imprimés colorés, photographié devant une façade jaune baignée de lumière. Un instant qui mêle assurance, élégance et joie de vivre." data-details="Style &amp; caractère · Portrait en pied">
+            <button class="photo-open" type="button" aria-label="Agrandir : Couleurs en lumière">
+              <img src="https://res.cloudinary.com/vh2wg70z/image/upload/f_auto,q_auto,w_1200,c_limit/profile3.jpg" alt="Portrait en tenue colorée devant une façade jaune" loading="lazy">
+              <span class="photo-overlay"><span class="photo-number">01 / 04</span><span class="photo-zoom" aria-hidden="true">↗</span></span>
+            </button>
+            <div class="photo-caption"><div><h3>Couleurs en lumière</h3><p class="photo-category">Style &amp; caractère</p><p class="photo-description">Une silhouette affirmée, des motifs vibrants et une lumière dorée : un portrait qui ne passe pas inaperçu.</p></div><span class="caption-mark" aria-hidden="true">✳</span></div>
+          </article>
+
+          <article class="photo-card photo-card--second" data-category="portrait" data-original-url="https://res.cloudinary.com/vh2wg70z/image/upload/profile2.jpg" data-download-url="https://res.cloudinary.com/vh2wg70z/image/upload/fl_attachment/profile2.jpg" data-description="Une pose élégante devant les carreaux lumineux de la façade. Les lignes de la tenue et la simplicité du décor composent un portrait plein de présence." data-details="Portrait · Élégance &amp; allure">
+            <button class="photo-open" type="button" aria-label="Agrandir : Élégance du quotidien">
+              <img src="https://res.cloudinary.com/vh2wg70z/image/upload/f_auto,q_auto,w_900,c_limit/profile2.jpg" alt="Portrait élégant devant une façade jaune" loading="lazy">
+              <span class="photo-overlay"><span class="photo-number">02 / 04</span><span class="photo-zoom" aria-hidden="true">↗</span></span>
+            </button>
+            <div class="photo-caption"><div><h3>Élégance du quotidien</h3><p class="photo-category">Portrait</p><p class="photo-description">Une allure soignée devant les lignes bleues et jaunes de la façade : la simplicité avec beaucoup de caractère.</p></div><span class="caption-mark" aria-hidden="true">✳</span></div>
+          </article>
+
+          <article class="photo-card photo-card--third" data-category="instant portrait" data-original-url="https://res.cloudinary.com/vh2wg70z/image/upload/profile4.jpg" data-download-url="https://res.cloudinary.com/vh2wg70z/image/upload/fl_attachment/profile4.jpg" data-description="Un portrait rapproché et spontané, où le regard et le cadrage intime invitent à découvrir une facette plus personnelle de la collection." data-details="Instantané · Un moment naturel">
+            <button class="photo-open" type="button" aria-label="Agrandir : Un instant pour soi">
+              <img src="https://res.cloudinary.com/vh2wg70z/image/upload/f_auto,q_auto,w_900,c_limit/profile4.jpg" alt="Portrait rapproché, un instant naturel" loading="lazy">
+              <span class="photo-overlay"><span class="photo-number">03 / 04</span><span class="photo-zoom" aria-hidden="true">↗</span></span>
+            </button>
+            <div class="photo-caption"><div><h3>Un instant pour soi</h3><p class="photo-category">Instantané</p><p class="photo-description">Un portrait rapproché et naturel qui révèle un moment plus intime, tout en douceur et en simplicité.</p></div><span class="caption-mark" aria-hidden="true">✳</span></div>
+          </article>
+
+          <article class="photo-card photo-card--fourth" data-category="style portrait" data-original-url="https://res.cloudinary.com/vh2wg70z/image/upload/profile1.jpg" data-download-url="https://res.cloudinary.com/vh2wg70z/image/upload/fl_attachment/profile1.jpg" data-description="Une tenue aux tons chauds se détache sur la façade ensoleillée et les carreaux du patio. Un portrait lumineux, empreint de calme et d’élégance." data-details="Style &amp; lumière · Portrait en pied">
+            <button class="photo-open" type="button" aria-label="Agrandir : La douceur des tons chauds">
+              <img src="https://res.cloudinary.com/vh2wg70z/image/upload/f_auto,q_auto,w_1000,c_limit/profile1.jpg" alt="Portrait en tenue brune, dans une cour ensoleillée" loading="lazy">
+              <span class="photo-overlay"><span class="photo-number">04 / 04</span><span class="photo-zoom" aria-hidden="true">↗</span></span>
+            </button>
+            <div class="photo-caption"><div><h3>La douceur des tons chauds</h3><p class="photo-category">Style &amp; lumière</p><p class="photo-description">Une tenue brune, une façade lumineuse, une atmosphère paisible : un instant tout en douceur.</p></div><span class="caption-mark" aria-hidden="true">✳</span></div>
+          </article>
+        </div>
+        <p class="empty-state" hidden>Aucune photo ne correspond à cette sélection.</p>
+      </section>
+
+      <section class="about-section" id="apropos" aria-labelledby="about-title">
+        <span class="about-flower" aria-hidden="true">✳</span>
+        <p class="eyebrow">À propos de cette galerie</p>
+        <h2 id="about-title">Des images simples.<br><em>Des souvenirs précieux.</em></h2>
+        <p>Bienvenue dans mon univers. Cette collection rassemble quatre portraits qui me ressemblent : spontanés, colorés et pleins de vie.</p>
+        <a class="text-link text-link--light" href="#accueil">Revenir en haut <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#accueil">
+        <span class="brand-mark">AM</span>
+        <span class="brand-name">Abigael Mahitiko</span>
+      </a>
+      <p>Une galerie personnelle, hébergée avec <strong>Cloudinary</strong>.</p>
+      <span class="footer-year">© 2026</span>
+    </footer>
+
+    <dialog class="lightbox" aria-labelledby="lightbox-title">
+      <button class="lightbox-close" type="button" aria-label="Fermer l’aperçu">×</button>
+      <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Photo précédente">←</button>
+      <div class="lightbox-content">
+        <figure class="lightbox-figure">
+          <img class="lightbox-image" src="" alt="">
+        </figure>
+        <section class="lightbox-details" aria-label="Informations sur la photographie">
+          <p class="lightbox-eyebrow">COLLECTION ABIGAEL MAHITIKO</p>
+          <h2 class="lightbox-title" id="lightbox-title"></h2>
+          <p class="lightbox-meta"></p>
+          <p class="lightbox-description"></p>
+          <div class="lightbox-rule"></div>
+          <p class="url-label">URL DE L’IMAGE CLOUDINARY</p>
+          <div class="url-copy-row">
+            <input class="lightbox-url" type="text" aria-label="URL Cloudinary de l’image" readonly>
+            <button class="action-button copy-button" type="button" aria-label="Copier l’URL de l’image" title="Copier l’URL">⧉</button>
+          </div>
+          <div class="photo-actions">
+            <button class="action-button share-button" type="button"><span aria-hidden="true">↗</span> Partager</button>
+            <a class="action-button download-button" href="" download><span aria-hidden="true">↓</span> Télécharger</a>
+          </div>
+          <p class="share-status" aria-live="polite"></p>
+        </section>
+      </div>
+      <button class="lightbox-arrow lightbox-next" type="button" aria-label="Photo suivante">→</button>
+      <p class="lightbox-count" aria-live="polite"></p>
+    </dialog>
+  </body>
+</html>
